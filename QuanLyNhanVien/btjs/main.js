@@ -13,7 +13,7 @@ function layThongTinNV() {
     const _password = getEle("password").value;
     const _datepicker = getEle("datepicker").value;
     const _luongCB = getEle("luongCB").value;
-    const _chucvu = getEle("chucvu")
+    const _chucvu = getEle("chucvu").value;
     const _gioLam = getEle("gioLam").value;
 
     const nv = new NhanVien(_tknv, _name, _email, _password, _datepicker, _luongCB, _chucvu,  _gioLam);
@@ -32,7 +32,7 @@ function renderUI(data) {
             <td>${nv.datepicker}</td>
             <td>${nv.chucvu}</td>
             <td>${nv.tinhLuong}</td>
-            <td>${nv.xeploai}</td>
+            <td>${nv.xepLoai}</td>
             <td>
               <button class="btn btn-danger" onclick="handleDelete('${nv.tknv}')">Delete</button>
             </td>
